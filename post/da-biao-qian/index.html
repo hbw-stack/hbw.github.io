@@ -2,21 +2,22 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>打标签 | Gridea</title>
-<link rel="shortcut icon" href="https://bangwenhe.github.io/label_distribution//favicon.ico?v=1613978214097">
+<title>骨架点标签 | 日常 | Paper | 摸鱼</title>
+<link rel="shortcut icon" href="https://hbw.github.io/favicon.ico?v=1621480008470">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://bangwenhe.github.io/label_distribution//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="打标签 | Gridea - Atom Feed" href="https://bangwenhe.github.io/label_distribution//atom.xml">
+<link rel="stylesheet" href="https://hbw.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="骨架点标签 | 日常 | Paper | 摸鱼 - Atom Feed" href="https://hbw.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
     <meta name="description" content="简介
 CV里的打标签方法有很多，这次我们打标签的是2D keypoints（2D关键点），就是把人体骨骼的关键点用一个坐标(x,y)(x,y)(x,y)表示出来。
+
 工具
 labelme
 
-pip install labelme：如果你的电脑..." />
+pip install labelme：如果你的电..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -25,37 +26,37 @@ pip install labelme：如果你的电脑..." />
     <div class="main">
       <div class="main-content">
         <div class="site-header">
-  <a href="https://bangwenhe.github.io/label_distribution/">
-  <img class="avatar" src="https://bangwenhe.github.io/label_distribution//images/avatar.png?v=1613978214097" alt="">
+  <a href="https://hbw.github.io">
+  <img class="avatar" src="https://hbw.github.io/images/avatar.png?v=1621480008470" alt="">
   </a>
   <h1 class="site-title">
-    Gridea
+    日常 | Paper | 摸鱼
   </h1>
   <p class="site-description">
-    温故而知新
+    日常吐槽摸鱼日记，还有一些博客
   </p>
   <div class="menu-container">
     
       
-        <a href="/" class="menu">
+        <a href="/" class="menu" target="_blank">
           首页
         </a>
       
     
       
-        <a href="/archives" class="menu">
+        <a href="/archives" class="menu" target="_blank">
           归档
         </a>
       
     
       
-        <a href="/tags" class="menu">
+        <a href="/tags" class="menu" target="_blank">
           标签
         </a>
       
     
       
-        <a href="/post/about" class="menu">
+        <a href="/post/about" class="menu" target="_blank">
           关于
         </a>
       
@@ -79,14 +80,14 @@ pip install labelme：如果你的电脑..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              打标签
+              骨架点标签
             </h2>
             <div class="post-info">
               <span>
                 2021-02-22
               </span>
               <span>
-                3 min read
+                4 min read
               </span>
               
             </div>
@@ -95,34 +96,121 @@ pip install labelme：如果你的电脑..." />
               <div class="post-content">
                 <h2 id="简介">简介</h2>
 <p>CV里的打标签方法有很多，这次我们打标签的是2D keypoints（2D关键点），就是把人体骨骼的关键点用一个坐标<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span>表示出来。</p>
+<!-- more -->
 <h2 id="工具">工具</h2>
 <p>labelme</p>
 <ol>
-<li><code>pip install labelme</code>：如果你的电脑上安装了python，那么可以通过这个命令直接安装，以后也是通过命令行直接打开labelme。labelme的安装路径：<code>${python_root}/Scripts/labelme.exe</code></li>
+<li><code>pip install labelme</code>：如果你的电脑上安装了python，那么可以通过这个命令直接安装，以后也可以通过命令行直接打开labelme。如果想要在桌面放一个labelme的快捷方式或者labelme程序，那么可以在它的安装路径下找到它，labelme的安装路径：<code>${python_root}/Scripts/labelme.exe</code>。</li>
 <li>如果你的电脑上没有安装python，可以直接到<a href="https://github.com/wkentaro/labelme/releases">labelme的github release页面</a>查看，如果速度较慢，可以试试<a href="https://download.fastgit.org/wkentaro/labelme/releases/download/v4.5.6/Labelme.exe">这个</a>。</li>
 </ol>
 <h2 id="标注方法">标注方法</h2>
 <p>下面是labelme的运行界面，<br>
-<img src="_v_images/20201215121747911_23581.png" alt="" loading="lazy"><br>
-我们要做的就是调整这些点，使其点的label（标签）符合关键点的位置。<br>
-更具体的我会录制一个视频，并提供一些标签给你们尝试。</p>
+<img src="https://hbw.github.io/post-images/1613979116939.png" alt="" loading="lazy"><br>
+在本次的任务中，一共有17个点需要标注，如表格所示，</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">标签名</th>
+<th style="text-align:center">中文名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">nose</td>
+<td style="text-align:center">鼻子</td>
+</tr>
+<tr>
+<td style="text-align:center">left_eye</td>
+<td style="text-align:center">左眼</td>
+</tr>
+<tr>
+<td style="text-align:center">right_eye</td>
+<td style="text-align:center">右眼</td>
+</tr>
+<tr>
+<td style="text-align:center">left_ear</td>
+<td style="text-align:center">左耳</td>
+</tr>
+<tr>
+<td style="text-align:center">right_ear</td>
+<td style="text-align:center">右耳</td>
+</tr>
+<tr>
+<td style="text-align:center">left_shoulder</td>
+<td style="text-align:center">左肩</td>
+</tr>
+<tr>
+<td style="text-align:center">right_shoulder</td>
+<td style="text-align:center">右肩</td>
+</tr>
+<tr>
+<td style="text-align:center">left_elbow</td>
+<td style="text-align:center">左手肘</td>
+</tr>
+<tr>
+<td style="text-align:center">right_elbow</td>
+<td style="text-align:center">右手肘</td>
+</tr>
+<tr>
+<td style="text-align:center">left_wrist</td>
+<td style="text-align:center">左手腕</td>
+</tr>
+<tr>
+<td style="text-align:center">right_wrist</td>
+<td style="text-align:center">右手腕</td>
+</tr>
+<tr>
+<td style="text-align:center">left_hip</td>
+<td style="text-align:center">左胯部/臀部</td>
+</tr>
+<tr>
+<td style="text-align:center">right_hip</td>
+<td style="text-align:center">右胯部/臀部</td>
+</tr>
+<tr>
+<td style="text-align:center">lb</td>
+<td style="text-align:center">桌子左下角（left bottom）</td>
+</tr>
+<tr>
+<td style="text-align:center">rb</td>
+<td style="text-align:center">桌子右下角（right bottom）</td>
+</tr>
+<tr>
+<td style="text-align:center">lt</td>
+<td style="text-align:center">桌子左上角（left top）</td>
+</tr>
+<tr>
+<td style="text-align:center">rt</td>
+<td style="text-align:center">桌子右上角（right top）</td>
+</tr>
+</tbody>
+</table>
+<p>我们要做的就是调整这些点，使其点的label（标签）符合关键点的位置。需要注意的是，这里的<strong>左右是相对于考生而言的</strong>，而不是坐在屏幕前打标签的同学们而言的，所以在调整标签时务必区分好左右。</p>
+<ul>
+<li>头部：调整关节点位置，注意偏头、低头，眼睛连线和耳朵连线应该比较平行</li>
+<li>肩部、肘部、腕部：比较显眼，可以直接调节至合适位置。注意这三个部位可能会被遮挡，这时候就需要自己预测哪个位置比较合理。</li>
+<li>桌子：
+<ul>
+<li>图像内的：标注</li>
+<li>超出的：如果超出不多，则标注；否则可不标，在生成时自动设置为0</li>
+</ul>
+</li>
+</ul>
+<p>更具体的我会录制一个视频，并提供一些标签给你们尝试。</p>
 <h2 id="标注规则">标注规则</h2>
-<p>置信度高的数据，只要不会影响最后的结果，可以不用调整。其他的偏差比较大的需要仔细调整一下。<br>
-对骨架乱的数据，需要保留下原始数据后，再打标签。就像这张图，它的桌子其实比较准确，但是骨架点完全乱了，就需要保留下原始数据，当然，这张里面都没有人体骨架，也就不需要标注了。<br>
-<img src="../vx_images/QQ%E6%88%AA%E5%9B%BE20210218120929-%E5%89%AF%E6%9C%AC.png" alt="" loading="lazy"></p>
+<p>规则与方法存在一些重合，所以这两者，大家都需要参考一下。方法中主要指的是每张图片标注的方法，标签是否合理之类的；规则可能更着重的是最后得到的数据的格式。</p>
+<p>置信度高的数据，只要不会影响最后的结果，可以不用调整。其他的偏差比较大的需要仔细调整一下。</p>
+<p>对骨架乱的数据，需要保留下原始数据后，再打标签。就像这张图，它的桌子其实比较准确，但是骨架点完全乱了，就需要保留下原始数据，当然，如果人体骨架都没有，也就不需要标注了。<br>
+<img src="https://hbw.github.io/post-images/1613979382543.png" alt="" loading="lazy"></p>
 <h2 id="数据的提供以及收回">数据的提供以及收回</h2>
-<p>每次开始打标签将会提供一次数据，数据会由人发放到各位打标签的同学们手中。<br>
-每次打标签持续的时间是5天左右，打好标签的数据需要由你们再次发回给发放数据的同学。<br>
-在打完标签之后，旧的数据就不需要继续打标签了，而是等到新的数据发放下来，再继续打标签。</p>
+<p>每次开始打标签将会提供一次数据，数据会由人发放到各位打标签的同学们手中。</p>
+<p>每次打标签持续的时间是5天左右，打好标签的数据需要由你们再次发回给发放数据的同学。</p>
+<p>在打完标签之后，旧的数据就不需要继续打标签了，而是等到新的数据发放下来，再继续打标签。</p>
 <h2 id="报酬">报酬</h2>
 <p>如果按照要求打完了所有标签，那么会按照0.2￥/张计算，如果没有打完，会按照0.1￥/张计算。<br>
 统计标签数量每周会进行一次。</p>
 <h2 id="其他">其他</h2>
 <p>在不同的时间段，打标签的具体规则会产生变化，每次的具体规则会包含在发放给各位打标签的同学们的数据压缩包里。</p>
-<p><strong>按照考场来分配训练集和验证集，先打验证集，然后打训练集。</strong><br>
-600张船山的数据，模型对于“回”字形上的数据。<br>
-调整好桌角，然后重新送入分类模型。<br>
-分类的作弊和不作弊是不带关键点的，不是我们最开始的分类的数据了。所以要用训练骨架模型的数据可视化成分类的数据。</p>
 
               </div>
               <div class="toc-container">
@@ -151,7 +239,7 @@ pip install labelme：如果你的电脑..." />
 
         <div class="site-footer">
   Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://bangwenhe.github.io/label_distribution//atom.xml" target="_blank">
+  <a class="rss" href="https://hbw.github.io/atom.xml" target="_blank">
     <i class="ri-rss-line"></i> RSS
   </a>
 </div>

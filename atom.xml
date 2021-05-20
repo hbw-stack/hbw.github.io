@@ -1,51 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://bangwenhe.github.io/label_distribution/</id>
-    <title>Gridea</title>
-    <updated>2021-02-22T07:16:57.042Z</updated>
+    <id>https://hbw.github.io</id>
+    <title>日常 | Paper | 摸鱼</title>
+    <updated>2021-05-20T03:08:56.323Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://bangwenhe.github.io/label_distribution/"/>
-    <link rel="self" href="https://bangwenhe.github.io/label_distribution/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
-    <logo>https://bangwenhe.github.io/label_distribution/images/avatar.png</logo>
-    <icon>https://bangwenhe.github.io/label_distribution/favicon.ico</icon>
-    <rights>All rights reserved 2021, Gridea</rights>
+    <link rel="alternate" href="https://hbw.github.io"/>
+    <link rel="self" href="https://hbw.github.io/atom.xml"/>
+    <subtitle>日常吐槽摸鱼日记，还有一些博客</subtitle>
+    <logo>https://hbw.github.io/images/avatar.png</logo>
+    <icon>https://hbw.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2021, 日常 | Paper | 摸鱼</rights>
     <entry>
-        <title type="html"><![CDATA[打标签]]></title>
-        <id>https://bangwenhe.github.io/label_distribution/post/da-biao-qian/</id>
-        <link href="https://bangwenhe.github.io/label_distribution/post/da-biao-qian/">
+        <title type="html"><![CDATA[2021-05-20-Papers]]></title>
+        <id>https://hbw.github.io/post/2021-05-20-papers/</id>
+        <link href="https://hbw.github.io/post/2021-05-20-papers/">
         </link>
-        <updated>2021-02-22T07:13:34.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="简介">简介</h2>
-<p>CV里的打标签方法有很多，这次我们打标签的是2D keypoints（2D关键点），就是把人体骨骼的关键点用一个坐标<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span>表示出来。</p>
-<h2 id="工具">工具</h2>
-<p>labelme</p>
-<ol>
-<li><code>pip install labelme</code>：如果你的电脑上安装了python，那么可以通过这个命令直接安装，以后也是通过命令行直接打开labelme。labelme的安装路径：<code>${python_root}/Scripts/labelme.exe</code></li>
-<li>如果你的电脑上没有安装python，可以直接到<a href="https://github.com/wkentaro/labelme/releases">labelme的github release页面</a>查看，如果速度较慢，可以试试<a href="https://download.fastgit.org/wkentaro/labelme/releases/download/v4.5.6/Labelme.exe">这个</a>。</li>
-</ol>
-<h2 id="标注方法">标注方法</h2>
-<p>下面是labelme的运行界面，<br>
-<img src="_v_images/20201215121747911_23581.png" alt="" loading="lazy"><br>
-我们要做的就是调整这些点，使其点的label（标签）符合关键点的位置。<br>
-更具体的我会录制一个视频，并提供一些标签给你们尝试。</p>
-<h2 id="标注规则">标注规则</h2>
-<p>置信度高的数据，只要不会影响最后的结果，可以不用调整。其他的偏差比较大的需要仔细调整一下。<br>
-对骨架乱的数据，需要保留下原始数据后，再打标签。就像这张图，它的桌子其实比较准确，但是骨架点完全乱了，就需要保留下原始数据，当然，这张里面都没有人体骨架，也就不需要标注了。<br>
-<img src="../vx_images/QQ%E6%88%AA%E5%9B%BE20210218120929-%E5%89%AF%E6%9C%AC.png" alt="" loading="lazy"></p>
-<h2 id="数据的提供以及收回">数据的提供以及收回</h2>
-<p>每次开始打标签将会提供一次数据，数据会由人发放到各位打标签的同学们手中。<br>
-每次打标签持续的时间是5天左右，打好标签的数据需要由你们再次发回给发放数据的同学。<br>
-在打完标签之后，旧的数据就不需要继续打标签了，而是等到新的数据发放下来，再继续打标签。</p>
-<h2 id="报酬">报酬</h2>
-<p>如果按照要求打完了所有标签，那么会按照0.2￥/张计算，如果没有打完，会按照0.1￥/张计算。<br>
-统计标签数量每周会进行一次。</p>
-<h2 id="其他">其他</h2>
-<p>在不同的时间段，打标签的具体规则会产生变化，每次的具体规则会包含在发放给各位打标签的同学们的数据压缩包里。</p>
-<p><strong>按照考场来分配训练集和验证集，先打验证集，然后打训练集。</strong><br>
-600张船山的数据，模型对于“回”字形上的数据。<br>
-调整好桌角，然后重新送入分类模型。<br>
-分类的作弊和不作弊是不带关键点的，不是我们最开始的分类的数据了。所以要用训练骨架模型的数据可视化成分类的数据。</p>
+        <updated>2021-05-20T02:49:37.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="http://arxiv.org/abs/2105.09008">A Novel lightweight Convolutional Neural Network, ExquisiteNetV2.</a>主要就是把很多计算量大的卷积核改成了depth-wise卷积和池化、BN等计算量和参数量都比较小的模块。主要是作者居然找了十几个不知名的数据集，离谱，你怎么不用CIFAR10、CIFAR100、ImageNet呢。</p>
 ]]></content>
     </entry>
 </feed>
