@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://hbw.github.io</id>
+    <id>https://blog.bangwhe.com</id>
     <title>日常 | Paper | 摸鱼</title>
-    <updated>2021-05-20T03:38:40.913Z</updated>
+    <updated>2021-05-20T03:43:41.034Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://hbw.github.io"/>
-    <link rel="self" href="https://hbw.github.io/atom.xml"/>
+    <link rel="alternate" href="https://blog.bangwhe.com"/>
+    <link rel="self" href="https://blog.bangwhe.com/atom.xml"/>
     <subtitle>日常吐槽摸鱼日记，还有一些博客</subtitle>
-    <logo>https://hbw.github.io/images/avatar.png</logo>
-    <icon>https://hbw.github.io/favicon.ico</icon>
+    <logo>https://blog.bangwhe.com/images/avatar.png</logo>
+    <icon>https://blog.bangwhe.com/favicon.ico</icon>
     <rights>All rights reserved 2021, 日常 | Paper | 摸鱼</rights>
     <entry>
         <title type="html"><![CDATA[2021-05-20-Papers]]></title>
-        <id>https://hbw.github.io/post/2021-05-20-papers/</id>
-        <link href="https://hbw.github.io/post/2021-05-20-papers/">
+        <id>https://blog.bangwhe.com/post/2021-05-20-papers/</id>
+        <link href="https://blog.bangwhe.com/post/2021-05-20-papers/">
         </link>
         <updated>2021-05-20T02:49:37.000Z</updated>
         <content type="html"><![CDATA[<p><a href="http://arxiv.org/abs/2105.09008">A Novel lightweight Convolutional Neural Network, ExquisiteNetV2.</a>主要就是把很多计算量大的卷积核改成了depth-wise卷积和池化、BN等计算量和参数量都比较小的模块。主要是作者居然找了十几个不知名的数据集，离谱，你怎么不用CIFAR10、CIFAR100、ImageNet呢。</p>
