@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.bangwhe.com</id>
     <title>日常 | Paper | 摸鱼</title>
-    <updated>2021-05-22T16:38:07.652Z</updated>
+    <updated>2021-05-22T16:43:55.603Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.bangwhe.com"/>
     <link rel="self" href="https://blog.bangwhe.com/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://blog.bangwhe.com/images/avatar.png</logo>
     <icon>https://blog.bangwhe.com/favicon.ico</icon>
     <rights>All rights reserved 2021, 日常 | Paper | 摸鱼</rights>
+    <entry>
+        <title type="html"><![CDATA[2021-05-22]]></title>
+        <id>https://blog.bangwhe.com/post/2021-05-22/</id>
+        <link href="https://blog.bangwhe.com/post/2021-05-22/">
+        </link>
+        <updated>2021-05-22T16:38:39.000Z</updated>
+        <summary type="html"><![CDATA[<p>打游戏：鲁班大师+姜子牙打弹弓非常快乐，打不打得到主要靠鲁班大师的瞄准，三点一线，然后姜子牙飞过来就可以打到人。</p>
+<p>毕设论文：没怎么写，拖到周日再继续写吧。今天主要就是把环境配好了，然后运行了一遍test.py，成功了，明天迁移一下试试。</p>
+<p>今天打了北京科兴的新冠疫苗，主要感受就是左手的针眼很凉，有一点点乏力。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>打游戏：鲁班大师+姜子牙打弹弓非常快乐，打不打得到主要靠鲁班大师的瞄准，三点一线，然后姜子牙飞过来就可以打到人。</p>
+<p>毕设论文：没怎么写，拖到周日再继续写吧。今天主要就是把环境配好了，然后运行了一遍test.py，成功了，明天迁移一下试试。</p>
+<p>今天打了北京科兴的新冠疫苗，主要感受就是左手的针眼很凉，有一点点乏力。</p>
+<!-- more -->
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[git clone 提速]]></title>
         <id>https://blog.bangwhe.com/post/git-clone-ti-su/</id>
