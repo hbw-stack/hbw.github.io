@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jetson环境安装 | 日常 | Paper | 摸鱼</title>
-<link rel="shortcut icon" href="https://blog.bangwhe.com/favicon.ico?v=1621671334759">
+<link rel="shortcut icon" href="https://blog.bangwhe.com/favicon.ico?v=1621672122794">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://blog.bangwhe.com/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="Jetson环境安装 | 日常 | Paper | 摸鱼 - Atom Feed" href="https://blog.bangwhe.com/atom.xml">
@@ -23,7 +23,7 @@ jetson是Nvidia开发的..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://blog.bangwhe.com">
-  <img class="avatar" src="https://blog.bangwhe.com/images/avatar.png?v=1621671334759" alt="">
+  <img class="avatar" src="https://blog.bangwhe.com/images/avatar.png?v=1621672122794" alt="">
   </a>
   <h1 class="site-title">
     日常 | Paper | 摸鱼
@@ -126,6 +126,7 @@ jetson是Nvidia开发的..." />
 <h3 id="安装虚拟环境">安装虚拟环境</h3>
 <p>安装虚拟环境这一步主要是安装miniforge，miniforge的使用与anaconda基本一致，主要变得可能就是路径上吧。可能还需要换个源，加速。</p>
 <h3 id="安装pytorch">安装pytorch</h3>
+<p>https://qengineering.eu/install-pytorch-on-jetson-nano.html</p>
 <p>最大的bug：<code>import torch</code>后显示<code>Illegal Instruction(Core Dumped)</code>。在<a href="https://forums.developer.nvidia.com/t/illegal-instruction-core-dumped/165488">这里</a>说明了是由于numpy 1.19.5导致的，换成1.19.4就行了。。。</p>
 <h3 id="安装torchvision">安装torchvision</h3>
 <p>torchvision的安装其实比较简单，主要就是下载torchvision并在本机上编译，不过可能会由于一些库的原因，导致torchvision编译失败。我这里出现的bug是<code>libavformat</code>库好像啥啥啥用不了，所以重新安装了<code>libavformat-dev</code>，对所有出现了的都这样解决了。</p>
