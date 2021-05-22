@@ -1,105 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://blog.bangwhe.com</id>
-    <title>日常 | Paper | 摸鱼</title>
-    <updated>2021-05-22T08:15:36.955Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://blog.bangwhe.com"/>
-    <link rel="self" href="https://blog.bangwhe.com/atom.xml"/>
-    <subtitle>日常吐槽摸鱼日记，还有一些博客</subtitle>
-    <logo>https://blog.bangwhe.com/images/avatar.png</logo>
-    <icon>https://blog.bangwhe.com/favicon.ico</icon>
-    <rights>All rights reserved 2021, 日常 | Paper | 摸鱼</rights>
-    <entry>
-        <title type="html"><![CDATA[git clone 提速]]></title>
-        <id>https://blog.bangwhe.com/post/git-clone-ti-su/</id>
-        <link href="https://blog.bangwhe.com/post/git-clone-ti-su/">
-        </link>
-        <updated>2021-05-22T07:31:07.000Z</updated>
-        <content type="html"><![CDATA[<p>主要参考链接：</p>
-<ul>
-<li>https://www.zhihu.com/question/27159393</li>
-<li>https://blog.csdn.net/m0_37604813/article/details/107130881</li>
-</ul>
-<p>总结的主要方法：</p>
-<ul>
-<li>配置git proxy</li>
-<li>走镜像（走码云再克隆也是一样的道理）</li>
-<li>修改host文件</li>
-<li><a href="https://greasyfork.org/zh-CN/scripts/412245-github-%E5%A2%9E%E5%BC%BA-%E9%AB%98%E9%80%9F%E4%B8%8B%E8%BD%BD">油猴脚本</a>，算是合集吧</li>
-<li>对于git submodule而言，最直接的方法就是配置代理，如果想要走镜像，必须把所有路径下的.gitsubmodule文件修改，代码如下。</li>
-</ul>
-<pre><code class="language-python">import os
-import glob
-
-import sys
-import argparse
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jetson环境安装 | 日常 | Paper | 摸鱼</title>
+<link rel="shortcut icon" href="https://blog.bangwhe.com/favicon.ico?v=1621671334759">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://blog.bangwhe.com/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Jetson环境安装 | 日常 | Paper | 摸鱼 - Atom Feed" href="https://blog.bangwhe.com/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
-def parse_args():
-    parser = argparse.ArgumentParser(description='修改gitmodules中的github链接为镜像链接')
+
+    <meta name="description" content="从开始安装到我安装完成（安装好了pytorch、torchvision等hrnet的要求库，并能正常运行），花费了有一天吧。下面我就从Jetson开始介绍并写一下自己环境安装过程中遇到的问题。
+Jetson
+jetson是Nvidia开发的..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://blog.bangwhe.com">
+  <img class="avatar" src="https://blog.bangwhe.com/images/avatar.png?v=1621671334759" alt="">
+  </a>
+  <h1 class="site-title">
+    日常 | Paper | 摸鱼
+  </h1>
+  <p class="site-description">
+    日常吐槽摸鱼日记，还有一些博客
+  </p>
+  <div class="menu-container">
     
-    parser.add_argument('--root_dir', help='git项目的根目录', default='.')
-    parser.add_argument('--mirror', help='镜像链接', choices=['github.com.cnpmjs.org', 'hub.fastgit.org'], default='github.com.cnpmjs.org')
-    parser = parser.parse_args()
+      
+        <a href="/" class="menu" target="_blank">
+          首页
+        </a>
+      
     
-    return parser
-
-
-def change_mirror_url(filename, mirror='github.com.cnpmjs.org', in_place=False):
-    with open(filename) as f:
-        lines = f.readlines()
-
-    lines = [i.replace('github.com', mirror) for i in lines]
+      
+        <a href="/archives" class="menu" target="_blank">
+          归档
+        </a>
+      
     
-    if in_place:
-        with open(filename, 'w') as f:
-            for line in lines:
-                f.write(line)
+      
+        <a href="/tags" class="menu" target="_blank">
+          标签
+        </a>
+      
     
-    return lines
+      
+        <a href="/post/about" class="menu" target="_blank">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
 
-
-if __name__ == '__main__':
-    args = parse_args()
-    root_dir = args.root_dir
-    mirror = args.mirror
-    assert '.git' in os.listdir(args.root_dir), '必须是git项目的根目录'
-
-    files = glob.glob(f'{root_dir}/**/.gitmodules', recursive=True)
-    for file in files:
-        change_mirror_url(file, mirror=mirror, in_place=True)
-        print(f'{file}修改完成...')
-</code></pre>
-<p>pytorch项目的输出：</p>
-<pre><code class="language-log">.\pytorch\.gitmodules修改完成...
-.\pytorch\third_party\fbgemm\.gitmodules修改完成...
-.\pytorch\third_party\gloo\.gitmodules修改完成...
-.\pytorch\third_party\ideep\.gitmodules修改完成...
-.\pytorch\third_party\onnx\.gitmodules修改完成...
-.\pytorch\third_party\onnx\third_party\pybind11\.gitmodules修改完成...
-.\pytorch\third_party\onnx-tensorrt\.gitmodules修改完成...
-.\pytorch\third_party\onnx-tensorrt\third_party\onnx\.gitmodules修改完成...
-.\pytorch\third_party\onnx-tensorrt\third_party\onnx\third_party\pybind11\.gitmodules修改完成...
-.\pytorch\third_party\protobuf\.gitmodules修改完成...
-.\pytorch\third_party\pybind11\.gitmodules修改完成...
-.\pytorch\third_party\tensorpipe\.gitmodules修改完成...
-.\pytorch\third_party\tensorpipe\third_party\pybind11\.gitmodules修改完成...
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Jetson环境安装]]></title>
-        <id>https://blog.bangwhe.com/post/jetson-huan-jing-an-zhuang/</id>
-        <link href="https://blog.bangwhe.com/post/jetson-huan-jing-an-zhuang/">
-        </link>
-        <updated>2021-05-22T07:29:29.000Z</updated>
-        <summary type="html"><![CDATA[<p>从开始安装到我安装完成（安装好了pytorch、torchvision等hrnet的要求库，并能正常运行），花费了有一天吧。下面我就从Jetson开始介绍并写一下自己环境安装过程中遇到的问题。</p>
-<h2 id="jetson">Jetson</h2>
-<p>jetson是Nvidia开发的适用于边缘计算的嵌入式设备，它有一个<a href="https://forums.developer.nvidia.com">开发者论坛</a>，我有很多问题都是在上面找到答案的，当然还有csdn上。。。</p>
-<p>我这台设备是<a href="https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit">jetson agx xavier</a>，它是一个方盒子，并不像其他的jetson设备那样是裸板子。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>从开始安装到我安装完成（安装好了pytorch、torchvision等hrnet的要求库，并能正常运行），花费了有一天吧。下面我就从Jetson开始介绍并写一下自己环境安装过程中遇到的问题。</p>
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Jetson环境安装
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-05-22
+              </span>
+              <span>
+                7 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>从开始安装到我安装完成（安装好了pytorch、torchvision等hrnet的要求库，并能正常运行），花费了有一天吧。下面我就从Jetson开始介绍并写一下自己环境安装过程中遇到的问题。</p>
 <h2 id="jetson">Jetson</h2>
 <p>jetson是Nvidia开发的适用于边缘计算的嵌入式设备，它有一个<a href="https://forums.developer.nvidia.com">开发者论坛</a>，我有很多问题都是在上面找到答案的，当然还有csdn上。。。</p>
 <p>我这台设备是<a href="https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit">jetson agx xavier</a>，它是一个方盒子，并不像其他的jetson设备那样是裸板子。</p>
@@ -163,15 +154,108 @@ if __name__ == '__main__':
 <p><code>pip install torchvision</code></p>
 <h3 id="dgl">dgl</h3>
 <p>编译吧</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2021-05-20-Papers]]></title>
-        <id>https://blog.bangwhe.com/post/2021-05-20-papers/</id>
-        <link href="https://blog.bangwhe.com/post/2021-05-20-papers/">
-        </link>
-        <updated>2021-05-20T02:49:37.000Z</updated>
-        <content type="html"><![CDATA[<p><a href="http://arxiv.org/abs/2105.09008">A Novel lightweight Convolutional Neural Network, ExquisiteNetV2.</a>主要就是把很多计算量大的卷积核改成了depth-wise卷积和池化、BN等计算量和参数量都比较小的模块。主要是作者居然找了十几个不知名的数据集，离谱，你怎么不用CIFAR10、CIFAR100、ImageNet呢。</p>
-]]></content>
-    </entry>
-</feed>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#jetson">Jetson</a></li>
+<li><a href="#bug">bug</a>
+<ul>
+<li><a href="#%E5%A4%96%E8%AE%BE">外设</a></li>
+<li><a href="#jetson%E7%B3%BB%E7%BB%9F">jetson系统</a></li>
+<li><a href="#%E5%88%B7%E6%9C%BA">刷机</a>
+<ul>
+<li><a href="#%E5%88%B7%E6%9C%BA%E6%89%80%E9%9C%80%E8%BD%AF%E7%A1%AC%E4%BB%B6">刷机所需软硬件</a></li>
+<li><a href="#%E5%88%B7%E6%9C%BA%E8%BF%87%E7%A8%8B">刷机过程</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83">安装虚拟环境</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85pytorch">安装pytorch</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85torchvision">安装torchvision</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85opencv">安装opencv</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85dgl">安装dgl</a></li>
+</ul>
+</li>
+<li><a href="#%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85">环境安装</a>
+<ul>
+<li><a href="#pytorch">pytorch</a></li>
+<li><a href="#torchvision">torchvision</a></li>
+<li><a href="#dgl">dgl</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://blog.bangwhe.com/post/2021-05-20-papers/">
+              <h3 class="post-title">
+                2021-05-20-Papers
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://blog.bangwhe.com/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
