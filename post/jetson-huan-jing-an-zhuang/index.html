@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jetson环境安装 | 日常 | Paper | 摸鱼</title>
-<link rel="shortcut icon" href="https://blog.bangwhe.com/favicon.ico?v=1621672215852">
+<link rel="shortcut icon" href="https://blog.bangwhe.com/favicon.ico?v=1621685665697">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://blog.bangwhe.com/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="Jetson环境安装 | 日常 | Paper | 摸鱼 - Atom Feed" href="https://blog.bangwhe.com/atom.xml">
@@ -14,7 +14,7 @@
     <meta name="description" content="从开始安装到我安装完成（安装好了pytorch、torchvision等hrnet的要求库，并能正常运行），花费了有一天吧。下面我就从Jetson开始介绍并写一下自己环境安装过程中遇到的问题。
 Jetson
 jetson是Nvidia开发的..." />
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="jetson,环境安装,吐槽" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -23,7 +23,7 @@ jetson是Nvidia开发的..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://blog.bangwhe.com">
-  <img class="avatar" src="https://blog.bangwhe.com/images/avatar.png?v=1621672215852" alt="">
+  <img class="avatar" src="https://blog.bangwhe.com/images/avatar.png?v=1621685665697" alt="">
   </a>
   <h1 class="site-title">
     日常 | Paper | 摸鱼
@@ -86,6 +86,18 @@ jetson是Nvidia开发的..." />
                 7 min read
               </span>
               
+                <a href="https://blog.bangwhe.com/tag/cw4hZQFg5/" class="post-tag">
+                  # jetson
+                </a>
+              
+                <a href="https://blog.bangwhe.com/tag/Y77Vu9q87r/" class="post-tag">
+                  # 环境安装
+                </a>
+              
+                <a href="https://blog.bangwhe.com/tag/q9yQlQ9pz/" class="post-tag">
+                  # 吐槽
+                </a>
+              
             </div>
             
             <div class="post-content-wrapper">
@@ -134,6 +146,7 @@ jetson是Nvidia开发的..." />
 <p>jetpack4.5的SDK安装中的Computer Vision部分就会安装好opencv，所以我只需要把编译完成的so文件移动到我的python路径内就行。可以参考第二个链接，它是重新编译opencv，但是我只需要把opencv的so文件移动过去即可，即<code>sudo cp /usr/local/lib/python3.6/dist-packages/cv2.cpython-36m-aarch64-linux-gnu.so /home/bangwhe/miniforge-pypy3/envs/hrnet/lib/python3.6/site-packages/cv2.so</code></p>
 <h3 id="安装dgl">安装dgl</h3>
 <p>https://github.com/dmlc/dgl/issues/2424</p>
+<p>https://github.com/dmlc/dgl/issues/2661</p>
 <p>修复了arm架构bug的dgl库只支持python3.7，但是nvidia只支持了python3.6的torch的whl文件。所以现在的解决方案有三个：</p>
 <ul>
 <li>编译python 3.7版本的torch，这条可行性应该最大</li>
@@ -152,7 +165,7 @@ jetson是Nvidia开发的..." />
 <p>pytorch的克隆和编译都比较慢，最后用的是别人编译完成的whl文件。在<a href="https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-8-0-now-available/72048/830">这个链接</a>下搜索google基本上都有，我一共下载了两个：<a href="https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-8-0-now-available/72048/830">torch-1.8.1a0+56b43f4-cp37-cp37m-linux_aarch64.whl</a>和<a href="https://drive.google.com/file/d/1lMSZu_hARJDpfZuJHc64Hb3OXntlRO--/view?usp=sharing"> torch-1.7.0a0-cp38-cp38-linux_aarch64.whl</a></p>
 <p>给出编译好的whl文件的真是大善人~</p>
 <h3 id="torchvision">torchvision</h3>
-<p><code>pip install torchvision</code></p>
+<p>直接安装whl文件，whl文件从<a href="https://github.com/KumaTea/pytorch-aarch64#cuda--cudnn-support">KumaTea PyTorch-aarch64</a>下。</p>
 <h3 id="dgl">dgl</h3>
 <p>编译吧</p>
 
