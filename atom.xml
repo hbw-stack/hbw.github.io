@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.bangwhe.com</id>
     <title>日常 | Paper | 摸鱼</title>
-    <updated>2021-05-22T12:14:29.766Z</updated>
+    <updated>2021-05-22T16:29:56.447Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.bangwhe.com"/>
     <link rel="self" href="https://blog.bangwhe.com/atom.xml"/>
@@ -177,9 +177,18 @@ if __name__ == '__main__':
 <p>pytorch的克隆和编译都比较慢，最后用的是别人编译完成的whl文件。在<a href="https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-8-0-now-available/72048/830">这个链接</a>下搜索google基本上都有，我一共下载了两个：<a href="https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-8-0-now-available/72048/830">torch-1.8.1a0+56b43f4-cp37-cp37m-linux_aarch64.whl</a>和<a href="https://drive.google.com/file/d/1lMSZu_hARJDpfZuJHc64Hb3OXntlRO--/view?usp=sharing"> torch-1.7.0a0-cp38-cp38-linux_aarch64.whl</a></p>
 <p>给出编译好的whl文件的真是大善人~</p>
 <h3 id="torchvision">torchvision</h3>
-<p>直接安装whl文件，whl文件从<a href="https://github.com/KumaTea/pytorch-aarch64#cuda--cudnn-support">KumaTea PyTorch-aarch64</a>下。</p>
+<p>直接安装whl文件，whl文件从<a href="https://github.com/KumaTea/pytorch-aarch64#cuda--cudnn-support">KumaTea PyTorch-aarch64</a>下。（实测不行，因为这些版本似乎是CPU版本，必须用GPU版本的）</p>
+<p>必须走编译路线</p>
 <h3 id="dgl">dgl</h3>
-<p>编译吧</p>
+<p>编译吧，dgl最新的编译失败了，没有生成whl文件，最后用的是编译之后的源码直接放到packages里的方法提供环境依赖。</p>
+<h3 id="环境安装结果">环境安装结果</h3>
+<p>python：3.7<br>
+torch：1.8<br>
+torchvision：0.7.0<br>
+dgl：0.6<br>
+CUDA：10.2.89<br>
+cuDNN：8.0.0.180</p>
+<p>链接: https://pan.baidu.com/s/1rpiIUR6UA_qzWRPQAa4KmA 提取码: 79qc 复制这段内容后打开百度网盘手机App，操作更方便哦</p>
 ]]></content>
     </entry>
     <entry>
