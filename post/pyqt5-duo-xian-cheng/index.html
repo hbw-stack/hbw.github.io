@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>PyQt5多线程 | 日常 | Paper | 摸鱼</title>
-<link rel="shortcut icon" href="https://blog.bangwhe.com/favicon.ico?v=1621876422055">
+<link rel="shortcut icon" href="https://blog.bangwhe.com/favicon.ico?v=1621876542127">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://blog.bangwhe.com/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="PyQt5多线程 | 日常 | Paper | 摸鱼 - Atom Feed" href="https://blog.bangwhe.com/atom.xml">
@@ -12,9 +12,10 @@
 
 
     <meta name="description" content="主要是毕设的代码里要用到多线程，本来是想直接在函数里写个函数，然后直接用python的多线程库跑的，但是看到Qt也有多线程库QThread，于是就决定用它了。
+
 如果只是简单的使用那就非常简单：
-class Mythread(QThread)..." />
-    <meta name="keywords" content="" />
+class Mythread(QThread..." />
+    <meta name="keywords" content="pyqt,bug" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -23,7 +24,7 @@ class Mythread(QThread)..." />
       <div class="main-content">
         <div class="site-header">
   <a href="https://blog.bangwhe.com">
-  <img class="avatar" src="https://blog.bangwhe.com/images/avatar.png?v=1621876422055" alt="">
+  <img class="avatar" src="https://blog.bangwhe.com/images/avatar.png?v=1621876542127" alt="">
   </a>
   <h1 class="site-title">
     日常 | Paper | 摸鱼
@@ -90,11 +91,20 @@ class Mythread(QThread)..." />
                 2 min read
               </span>
               
+                <a href="https://blog.bangwhe.com/tag/DEX8vdNKl/" class="post-tag">
+                  # pyqt
+                </a>
+              
+                <a href="https://blog.bangwhe.com/tag/k1LBEiaqe7/" class="post-tag">
+                  # bug
+                </a>
+              
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
                 <p>主要是毕设的代码里要用到多线程，本来是想直接在函数里写个函数，然后直接用python的多线程库跑的，但是看到Qt也有多线程库QThread，于是就决定用它了。</p>
+<!-- more -->
 <p>如果只是简单的使用那就非常简单：</p>
 <pre><code class="language-python">class Mythread(QThread):
     def __init__(self, **kwargs):
@@ -104,7 +114,6 @@ class Mythread(QThread)..." />
         do_something()
 </code></pre>
 <p>如果需要传参，可以在初始化时操作。如果需要使用qt的信号和槽机制，那就得加上qtsignal来传递数据（这好像是切换进程吧）。</p>
-<!-- more -->
 <p>bug：我的bug其实挺简单的——线程被我设置成了局部变量，导致函数退出的时候线程变量被回收了，所以程序异常退出了，跟我之前那个程序的错误如出一辙。解决就是把线程变量设置为类变量，这样它就不会被回收了。</p>
 <p>新bug：thread的事件绑定错误了，我在初始化的时候初始化了一个thread，但是进入的时候并不是这个thread（因为要修改一些入参），所以事件无法触发。</p>
 
