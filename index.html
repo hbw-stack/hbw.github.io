@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>日常 | Paper | 摸鱼</title>
-<link rel="shortcut icon" href="https://blog.bangwhe.com/favicon.ico?v=1621702192649">
+<link rel="shortcut icon" href="https://blog.bangwhe.com/favicon.ico?v=1621850120898">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://blog.bangwhe.com/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="日常 | Paper | 摸鱼 - Atom Feed" href="https://blog.bangwhe.com/atom.xml">
@@ -18,7 +18,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://blog.bangwhe.com">
-  <img class="avatar" src="https://blog.bangwhe.com/images/avatar.png?v=1621702192649" alt="">
+  <img class="avatar" src="https://blog.bangwhe.com/images/avatar.png?v=1621850120898" alt="">
   </a>
   <h1 class="site-title">
     日常 | Paper | 摸鱼
@@ -74,6 +74,35 @@
 
     
         <div class="post-container">
+  
+    <article class="post">
+      <a href="https://blog.bangwhe.com/post/pyqt5-duo-xian-cheng/">
+        <h2 class="post-title">PyQt5多线程</h2>
+      </a>
+      <div class="post-info">
+        <span>
+          2021-05-23
+        </span>
+        <span>
+          2 min read
+        </span>
+        
+      </div>
+      
+      <div class="post-abstract">
+        <p>主要是毕设的代码里要用到多线程，本来是想直接在函数里写个函数，然后直接用python的多线程库跑的，但是看到Qt也有多线程库QThread，于是就决定用它了。</p>
+<p>如果只是简单的使用那就非常简单：</p>
+<pre><code class="language-python">class Mythread(QThread):
+    def __init__(self, **kwargs):
+        super().__inint__()
+
+    def run(self):
+        do_something()
+</code></pre>
+<p>如果需要传参，可以在初始化时操作。如果需要使用qt的信号和槽机制，那就得加上qtsignal来传递数据（这好像是切换进程吧）。</p>
+
+      </div>
+    </article>
   
     <article class="post">
       <a href="https://blog.bangwhe.com/post/2021-05-22/">
