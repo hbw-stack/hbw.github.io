@@ -2,19 +2,17 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>2021-05-22 | 日常 | Paper | 摸鱼</title>
+<title>2021-05-24 | 日常 | Paper | 摸鱼</title>
 <link rel="shortcut icon" href="https://blog.bangwhe.com/favicon.ico?v=1621876422055">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://blog.bangwhe.com/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="2021-05-22 | 日常 | Paper | 摸鱼 - Atom Feed" href="https://blog.bangwhe.com/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="2021-05-24 | 日常 | Paper | 摸鱼 - Atom Feed" href="https://blog.bangwhe.com/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="打游戏：鲁班大师+姜子牙打弹弓非常快乐，打不打得到主要靠鲁班大师的瞄准，三点一线，然后姜子牙飞过来就可以打到人。
-毕设论文：没怎么写，拖到周日再继续写吧。今天主要就是把环境配好了，然后运行了一遍test.py，成功了，明天迁移一下试试。
-今..." />
-    <meta name="keywords" content="日记,吐槽" />
+    <meta name="description" content="编译了一个PyQt5，反正放到arm上就是很多要编译的。编译PyQt5的要求：qmake、sip，注意sip需要安装旧的4.19的，这样才有可执行的sip文件。主要参考：https://forums.developer.nvidia.com..." />
+    <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -80,32 +78,23 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              2021-05-22
+              2021-05-24
             </h2>
             <div class="post-info">
               <span>
-                2021-05-23
+                2021-05-25
               </span>
               <span>
                 1 min read
               </span>
               
-                <a href="https://blog.bangwhe.com/tag/oHmgB5K5u/" class="post-tag">
-                  # 日记
-                </a>
-              
-                <a href="https://blog.bangwhe.com/tag/q9yQlQ9pz/" class="post-tag">
-                  # 吐槽
-                </a>
-              
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>打游戏：鲁班大师+姜子牙打弹弓非常快乐，打不打得到主要靠鲁班大师的瞄准，三点一线，然后姜子牙飞过来就可以打到人。</p>
-<p>毕设论文：没怎么写，拖到周日再继续写吧。今天主要就是把环境配好了，然后运行了一遍test.py，成功了，明天迁移一下试试。</p>
-<p>今天打了北京科兴的新冠疫苗，主要感受就是左手的针眼很凉，有一点点乏力。</p>
-<!-- more -->
+                <p>编译了一个PyQt5，反正放到arm上就是很多要编译的。编译PyQt5的要求：qmake、sip，注意sip需要安装旧的4.19的，这样才有可执行的sip文件。主要参考：https://forums.developer.nvidia.com/t/how-to-install-pyqt5-in-jetson-xavier/79554。最后的bug是<code>QtWidgets.sip not found</code>，这是一个包没有，使用pip安装即可（<code>pip install PyQt5.sip</code>）。在编译的时候，我还学到了<code>make -j4</code>是使用四个线程同时编译的意思，由于这个jetson有8个核，所以最大可以设置到8，编译速度非常快。</p>
+<p>论文查重：paperpass 13%，知网 15.7%，主要还是前面第一章复制的比例太高了，而且自己还没有做降重，所以知网的查重比非常高。</p>
+<p>鲁班大师很厉害，边路坦克我还是习惯玩白起一点。</p>
 
               </div>
               <div class="toc-container">
@@ -118,9 +107,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://blog.bangwhe.com/post/git-clone-ti-su/">
+            <a href="https://blog.bangwhe.com/post/pyqt5-duo-xian-cheng/">
               <h3 class="post-title">
-                git clone 提速
+                PyQt5多线程
               </h3>
             </a>
           </div>

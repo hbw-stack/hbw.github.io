@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.bangwhe.com</id>
     <title>日常 | Paper | 摸鱼</title>
-    <updated>2021-05-24T09:58:42.610Z</updated>
+    <updated>2021-05-24T17:13:47.115Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.bangwhe.com"/>
     <link rel="self" href="https://blog.bangwhe.com/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://blog.bangwhe.com/images/avatar.png</logo>
     <icon>https://blog.bangwhe.com/favicon.ico</icon>
     <rights>All rights reserved 2021, 日常 | Paper | 摸鱼</rights>
+    <entry>
+        <title type="html"><![CDATA[2021-05-24]]></title>
+        <id>https://blog.bangwhe.com/post/2021-05-24/</id>
+        <link href="https://blog.bangwhe.com/post/2021-05-24/">
+        </link>
+        <updated>2021-05-24T17:03:12.000Z</updated>
+        <content type="html"><![CDATA[<p>编译了一个PyQt5，反正放到arm上就是很多要编译的。编译PyQt5的要求：qmake、sip，注意sip需要安装旧的4.19的，这样才有可执行的sip文件。主要参考：https://forums.developer.nvidia.com/t/how-to-install-pyqt5-in-jetson-xavier/79554。最后的bug是<code>QtWidgets.sip not found</code>，这是一个包没有，使用pip安装即可（<code>pip install PyQt5.sip</code>）。在编译的时候，我还学到了<code>make -j4</code>是使用四个线程同时编译的意思，由于这个jetson有8个核，所以最大可以设置到8，编译速度非常快。</p>
+<p>论文查重：paperpass 13%，知网 15.7%，主要还是前面第一章复制的比例太高了，而且自己还没有做降重，所以知网的查重比非常高。</p>
+<p>鲁班大师很厉害，边路坦克我还是习惯玩白起一点。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[PyQt5多线程]]></title>
         <id>https://blog.bangwhe.com/post/pyqt5-duo-xian-cheng/</id>
