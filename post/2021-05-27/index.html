@@ -2,20 +2,29 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>PyQt5多线程 | 日常 | Paper | 摸鱼</title>
+<title>2021-05-27 | 日常 | Paper | 摸鱼</title>
 <link rel="shortcut icon" href="https://blog.bangwhe.com/favicon.ico?v=1622128802037">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://blog.bangwhe.com/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="PyQt5多线程 | 日常 | Paper | 摸鱼 - Atom Feed" href="https://blog.bangwhe.com/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="2021-05-27 | 日常 | Paper | 摸鱼 - Atom Feed" href="https://blog.bangwhe.com/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="主要是毕设的代码里要用到多线程，本来是想直接在函数里写个函数，然后直接用python的多线程库跑的，但是看到Qt也有多线程库QThread，于是就决定用它了。
+    <meta name="description" content="今天做后期检查，结果最重要的论文还没改好。最后还是花了两三小时，没吃午饭改好了一部分，paperpass查重还是有11%，好难啊。
+专家审查意见表：
 
-如果只是简单的使用那就非常简单：
-class Mythread(QThread..." />
-    <meta name="keywords" content="pyqt,bug" />
+
+
+评价项目
+评价意见
+
+
+
+
+调研报告
+调研内容比较充分，调研报告书写比较规范，但报告..." />
+    <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -81,41 +90,73 @@ class Mythread(QThread..." />
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              PyQt5多线程
+              2021-05-27
             </h2>
             <div class="post-info">
               <span>
-                2021-05-23
+                2021-05-27
               </span>
               <span>
                 2 min read
               </span>
               
-                <a href="https://blog.bangwhe.com/tag/DEX8vdNKl/" class="post-tag">
-                  # pyqt
-                </a>
-              
-                <a href="https://blog.bangwhe.com/tag/k1LBEiaqe7/" class="post-tag">
-                  # bug
-                </a>
-              
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>主要是毕设的代码里要用到多线程，本来是想直接在函数里写个函数，然后直接用python的多线程库跑的，但是看到Qt也有多线程库QThread，于是就决定用它了。</p>
-<!-- more -->
-<p>如果只是简单的使用那就非常简单：</p>
-<pre><code class="language-python">class Mythread(QThread):
-    def __init__(self, **kwargs):
-        super().__inint__()
-
-    def run(self):
-        do_something()
-</code></pre>
-<p>如果需要传参，可以在初始化时操作。如果需要使用qt的信号和槽机制，那就得加上qtsignal来传递数据（这好像是切换进程吧）。</p>
-<p>bug：我的bug其实挺简单的——线程被我设置成了局部变量，导致函数退出的时候线程变量被回收了，所以程序异常退出了，跟我之前那个程序的错误如出一辙。解决就是把线程变量设置为类变量，这样它就不会被回收了。</p>
-<p>新bug：thread的事件绑定错误了，我在初始化的时候初始化了一个thread，但是进入的时候并不是这个thread（因为要修改一些入参），所以事件无法触发。</p>
+                <p>今天做后期检查，结果最重要的论文还没改好。最后还是花了两三小时，没吃午饭改好了一部分，paperpass查重还是有11%，好难啊。</p>
+<p>专家审查意见表：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">评价项目</th>
+<th style="text-align:left">评价意见</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">调研报告</td>
+<td style="text-align:left">调研内容比较充分，调研报告书写比较规范，但<strong>报告中缺乏参考文献部分内容</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">译文、原文</td>
+<td style="text-align:left">英文翻译文档规范，符合要求</td>
+</tr>
+<tr>
+<td style="text-align:center">选题、工作量</td>
+<td style="text-align:left">选题合理，符合工作要求，工作量饱满</td>
+</tr>
+<tr>
+<td style="text-align:center">英文摘要及关键词</td>
+<td style="text-align:left">英文摘要比较规范，符合基本要求，关键词正确</td>
+</tr>
+<tr>
+<td style="text-align:center">目录、前言</td>
+<td style="text-align:left">目录规范，<strong>前言内容有点偏少，建议补充</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">参考文献</td>
+<td style="text-align:left"><strong>参考文献格式不规范</strong>，没有统一格式</td>
+</tr>
+<tr>
+<td style="text-align:center">论文正文</td>
+<td style="text-align:left">正文内容充实，基本符合要求，<strong>整体排版需进一步规范</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">图表正确、规范</td>
+<td style="text-align:left"><strong>图形字体有些模糊</strong>，如P2图1，P8图4字体过大，P8图12字体过小</td>
+</tr>
+<tr>
+<td style="text-align:center">学生能否答辩</td>
+<td style="text-align:left">修改后答辩</td>
+</tr>
+</tbody>
+</table>
+<p>今天发现胸前的小鼓包不是我的痣长出来肉，而是里面堆积了一些物质，我挤出来之后，发现这些东西是白色的，还有点腥臭。</p>
+<figure data-type="image" tabindex="1"><img src="https://blog.bangwhe.com/post-images/1622128750946.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://blog.bangwhe.com/post-images/1622128770938.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://blog.bangwhe.com/post-images/1622128779550.jpg" alt="" loading="lazy"></figure>
+<p>买了本2021年5月的科幻世界正刊，很好。</p>
 
               </div>
               <div class="toc-container">
@@ -128,9 +169,9 @@ class Mythread(QThread..." />
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://blog.bangwhe.com/post/2021-05-22/">
+            <a href="https://blog.bangwhe.com/post/2021-05-25/">
               <h3 class="post-title">
-                2021-05-22
+                2021-05-25
               </h3>
             </a>
           </div>

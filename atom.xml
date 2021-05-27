@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.bangwhe.com</id>
     <title>日常 | Paper | 摸鱼</title>
-    <updated>2021-05-25T16:24:48.381Z</updated>
+    <updated>2021-05-27T15:20:07.723Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.bangwhe.com"/>
     <link rel="self" href="https://blog.bangwhe.com/atom.xml"/>
@@ -10,6 +10,67 @@
     <logo>https://blog.bangwhe.com/images/avatar.png</logo>
     <icon>https://blog.bangwhe.com/favicon.ico</icon>
     <rights>All rights reserved 2021, 日常 | Paper | 摸鱼</rights>
+    <entry>
+        <title type="html"><![CDATA[2021-05-27]]></title>
+        <id>https://blog.bangwhe.com/post/2021-05-27/</id>
+        <link href="https://blog.bangwhe.com/post/2021-05-27/">
+        </link>
+        <updated>2021-05-27T15:07:04.000Z</updated>
+        <content type="html"><![CDATA[<p>今天做后期检查，结果最重要的论文还没改好。最后还是花了两三小时，没吃午饭改好了一部分，paperpass查重还是有11%，好难啊。</p>
+<p>专家审查意见表：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">评价项目</th>
+<th style="text-align:left">评价意见</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">调研报告</td>
+<td style="text-align:left">调研内容比较充分，调研报告书写比较规范，但<strong>报告中缺乏参考文献部分内容</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">译文、原文</td>
+<td style="text-align:left">英文翻译文档规范，符合要求</td>
+</tr>
+<tr>
+<td style="text-align:center">选题、工作量</td>
+<td style="text-align:left">选题合理，符合工作要求，工作量饱满</td>
+</tr>
+<tr>
+<td style="text-align:center">英文摘要及关键词</td>
+<td style="text-align:left">英文摘要比较规范，符合基本要求，关键词正确</td>
+</tr>
+<tr>
+<td style="text-align:center">目录、前言</td>
+<td style="text-align:left">目录规范，<strong>前言内容有点偏少，建议补充</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">参考文献</td>
+<td style="text-align:left"><strong>参考文献格式不规范</strong>，没有统一格式</td>
+</tr>
+<tr>
+<td style="text-align:center">论文正文</td>
+<td style="text-align:left">正文内容充实，基本符合要求，<strong>整体排版需进一步规范</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">图表正确、规范</td>
+<td style="text-align:left"><strong>图形字体有些模糊</strong>，如P2图1，P8图4字体过大，P8图12字体过小</td>
+</tr>
+<tr>
+<td style="text-align:center">学生能否答辩</td>
+<td style="text-align:left">修改后答辩</td>
+</tr>
+</tbody>
+</table>
+<p>今天发现胸前的小鼓包不是我的痣长出来肉，而是里面堆积了一些物质，我挤出来之后，发现这些东西是白色的，还有点腥臭。</p>
+<figure data-type="image" tabindex="1"><img src="https://blog.bangwhe.com/post-images/1622128750946.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://blog.bangwhe.com/post-images/1622128770938.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://blog.bangwhe.com/post-images/1622128779550.jpg" alt="" loading="lazy"></figure>
+<p>买了本2021年5月的科幻世界正刊，很好。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021-05-25]]></title>
         <id>https://blog.bangwhe.com/post/2021-05-25/</id>
