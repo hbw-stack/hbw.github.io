@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.bangwhe.com</id>
     <title>日常 | Paper | 摸鱼</title>
-    <updated>2021-05-27T15:52:46.748Z</updated>
+    <updated>2021-05-28T16:41:23.134Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.bangwhe.com"/>
     <link rel="self" href="https://blog.bangwhe.com/atom.xml"/>
@@ -11,12 +11,24 @@
     <icon>https://blog.bangwhe.com/favicon.ico</icon>
     <rights>All rights reserved 2021, 日常 | Paper | 摸鱼</rights>
     <entry>
+        <title type="html"><![CDATA[2021-05-28]]></title>
+        <id>https://blog.bangwhe.com/post/2021-05-28/</id>
+        <link href="https://blog.bangwhe.com/post/2021-05-28/">
+        </link>
+        <updated>2021-05-28T16:00:55.000Z</updated>
+        <content type="html"><![CDATA[<p>百万美元宝贝：前半段女主非常认真地追逐自己的拳击手的理想，结果却是被对手无耻的作弊行为毁掉了自己的未来以及生活的希望。做自己想做的，这应该是大部分人（包括我自己）都做不到的。最后还是找个班上了。</p>
+<p>明天可以去吃烤肉，说实话我觉得海底捞比较好，算了，有吃的都不错了，我们不要挑剔。</p>
+<p>测试：我试一试自己得打字速度能不能跟上自己的思考速度，应该还是可以跟上的，主要是有时候打得打得不知道按键在哪，总想看一看，重定位一下位置，然后再继续打字。但是这样的手法感觉就不太对，不太像打字的手法，像是自己的假手法。就像皇室战争里的真卡组和假卡组一样，虽然有时候都比较能用，但是真卡组用起来会更好。</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[2021-05-27]]></title>
         <id>https://blog.bangwhe.com/post/2021-05-27/</id>
         <link href="https://blog.bangwhe.com/post/2021-05-27/">
         </link>
         <updated>2021-05-27T15:07:04.000Z</updated>
         <content type="html"><![CDATA[<p>今天做后期检查，结果最重要的论文还没改好。最后还是花了两三小时，没吃午饭改好了一部分，paperpass查重还是有11%，好难啊。</p>
+<p>拿到之后跟章雅聊了会，她对这个卷起来的现状表示不满意，主要是本来自己已经做完了，查重14%，结果室友各个个位数，还疯狂降重，走上了被卷的道路。</p>
 <p>专家审查意见表：</p>
 <table>
 <thead>
