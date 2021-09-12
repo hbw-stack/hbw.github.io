@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.bangwhe.com</id>
     <title>日常 | Paper | 摸鱼</title>
-    <updated>2021-05-29T01:43:15.057Z</updated>
+    <updated>2021-09-12T02:25:01.029Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.bangwhe.com"/>
     <link rel="self" href="https://blog.bangwhe.com/atom.xml"/>
@@ -10,6 +10,35 @@
     <logo>https://blog.bangwhe.com/images/avatar.png</logo>
     <icon>https://blog.bangwhe.com/favicon.ico</icon>
     <rights>All rights reserved 2021, 日常 | Paper | 摸鱼</rights>
+    <entry>
+        <title type="html"><![CDATA[2021-05-31]]></title>
+        <id>https://blog.bangwhe.com/post/2021-05-31/</id>
+        <link href="https://blog.bangwhe.com/post/2021-05-31/">
+        </link>
+        <updated>2021-05-31T07:13:50.000Z</updated>
+        <content type="html"><![CDATA[<p>p1:</p>
+<ol>
+<li>改进</li>
+<li>效果依赖场景？</li>
+<li>长胖了？</li>
+</ol>
+<p>p2:</p>
+<ol>
+<li>为什么基于数据集的效果不理想？</li>
+<li>为什么不继续提升？</li>
+<li>如果设备性能跟上，能否继续提升？</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021-05-29]]></title>
+        <id>https://blog.bangwhe.com/post/2021-05-29/</id>
+        <link href="https://blog.bangwhe.com/post/2021-05-29/">
+        </link>
+        <updated>2021-05-29T15:41:31.000Z</updated>
+        <content type="html"><![CDATA[<p>吃烤肉，很爽。不过我首先喝了两杯椰汁，又来了一罐可乐，水喝太多了导致后面吃肉太少了，这个要避免。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021-05-28]]></title>
         <id>https://blog.bangwhe.com/post/2021-05-28/</id>
@@ -329,15 +358,6 @@ dgl：0.6<br>
 CUDA：10.2.89<br>
 cuDNN：8.0.0.180</p>
 <p>链接: https://pan.baidu.com/s/1rpiIUR6UA_qzWRPQAa4KmA 提取码: 79qc 复制这段内容后打开百度网盘手机App，操作更方便哦</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2021-05-20-Papers]]></title>
-        <id>https://blog.bangwhe.com/post/2021-05-20-papers/</id>
-        <link href="https://blog.bangwhe.com/post/2021-05-20-papers/">
-        </link>
-        <updated>2021-05-20T02:49:37.000Z</updated>
-        <content type="html"><![CDATA[<p><a href="http://arxiv.org/abs/2105.09008">A Novel lightweight Convolutional Neural Network, ExquisiteNetV2.</a>主要就是把很多计算量大的卷积核改成了depth-wise卷积和池化、BN等计算量和参数量都比较小的模块。主要是作者居然找了十几个不知名的数据集，离谱，你怎么不用CIFAR10、CIFAR100、ImageNet呢。</p>
 ]]></content>
     </entry>
 </feed>
