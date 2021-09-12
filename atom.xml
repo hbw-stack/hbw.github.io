@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://life.bangwhe.com</id>
+    <id>https://hbw-stack.github.io</id>
     <title>日常 | Paper | 摸鱼</title>
-    <updated>2021-09-12T02:29:08.979Z</updated>
+    <updated>2021-09-12T02:34:14.264Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://life.bangwhe.com"/>
-    <link rel="self" href="https://life.bangwhe.com/atom.xml"/>
+    <link rel="alternate" href="https://hbw-stack.github.io"/>
+    <link rel="self" href="https://hbw-stack.github.io/atom.xml"/>
     <subtitle>日常吐槽摸鱼日记，还有一些博客</subtitle>
-    <logo>https://life.bangwhe.com/images/avatar.png</logo>
-    <icon>https://life.bangwhe.com/favicon.ico</icon>
+    <logo>https://hbw-stack.github.io/images/avatar.png</logo>
+    <icon>https://hbw-stack.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 日常 | Paper | 摸鱼</rights>
     <entry>
         <title type="html"><![CDATA[2021-05-31]]></title>
-        <id>https://life.bangwhe.com/post/2021-05-31/</id>
-        <link href="https://life.bangwhe.com/post/2021-05-31/">
+        <id>https://hbw-stack.github.io/post/2021-05-31/</id>
+        <link href="https://hbw-stack.github.io/post/2021-05-31/">
         </link>
         <updated>2021-05-31T07:13:50.000Z</updated>
         <content type="html"><![CDATA[<p>p1:</p>
@@ -32,8 +32,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2021-05-29]]></title>
-        <id>https://life.bangwhe.com/post/2021-05-29/</id>
-        <link href="https://life.bangwhe.com/post/2021-05-29/">
+        <id>https://hbw-stack.github.io/post/2021-05-29/</id>
+        <link href="https://hbw-stack.github.io/post/2021-05-29/">
         </link>
         <updated>2021-05-29T15:41:31.000Z</updated>
         <content type="html"><![CDATA[<p>吃烤肉，很爽。不过我首先喝了两杯椰汁，又来了一罐可乐，水喝太多了导致后面吃肉太少了，这个要避免。</p>
@@ -41,8 +41,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2021-05-28]]></title>
-        <id>https://life.bangwhe.com/post/2021-05-28/</id>
-        <link href="https://life.bangwhe.com/post/2021-05-28/">
+        <id>https://hbw-stack.github.io/post/2021-05-28/</id>
+        <link href="https://hbw-stack.github.io/post/2021-05-28/">
         </link>
         <updated>2021-05-28T16:00:55.000Z</updated>
         <content type="html"><![CDATA[<p>百万美元宝贝：前半段女主非常认真地追逐自己的拳击手的理想，结果却是被对手无耻的作弊行为毁掉了自己的未来以及生活的希望。做自己想做的，这应该是大部分人（包括我自己）都做不到的。最后还是找个班上了。</p>
@@ -53,8 +53,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2021-05-27]]></title>
-        <id>https://life.bangwhe.com/post/2021-05-27/</id>
-        <link href="https://life.bangwhe.com/post/2021-05-27/">
+        <id>https://hbw-stack.github.io/post/2021-05-27/</id>
+        <link href="https://hbw-stack.github.io/post/2021-05-27/">
         </link>
         <updated>2021-05-27T15:07:04.000Z</updated>
         <content type="html"><![CDATA[<p>今天做后期检查，结果最重要的论文还没改好。最后还是花了两三小时，没吃午饭改好了一部分，paperpass查重还是有11%，好难啊。</p>
@@ -107,17 +107,17 @@
 </tbody>
 </table>
 <p>今天发现胸前的小鼓包不是我的痣长出来肉，而是里面堆积了一些物质，我挤出来之后，发现这些东西是白色的，还有点腥臭。</p>
-<figure data-type="image" tabindex="1"><img src="https://life.bangwhe.com/post-images/1622128750946.jpg" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="2"><img src="https://life.bangwhe.com/post-images/1622128770938.jpg" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="3"><img src="https://life.bangwhe.com/post-images/1622128779550.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://hbw-stack.github.io/post-images/1622128750946.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://hbw-stack.github.io/post-images/1622128770938.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://hbw-stack.github.io/post-images/1622128779550.jpg" alt="" loading="lazy"></figure>
 <p>“互联网医疗”看了一下，似乎是毛孔角化症，没有啥大毛病，就是看着不太好看。挤了之后反而会加重，导致毛囊炎之类的，说实话，我现在挤完之后有点痛了。又看了一下毛孔角化症的相关图片之后，我又觉得这玩意不太像毛孔角化症了，毕竟它最开始是非常大的一坨，我用力一挤，噗~，像拉稀一样拉出来了非常多的那种白色的固体，而且这玩意很臭。好了，这玩意应该是粉瘤，想要根除的话必须要去掉囊袋。</p>
 <p>买了本2021年5月的科幻世界正刊，很好。</p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[2021-05-25]]></title>
-        <id>https://life.bangwhe.com/post/2021-05-25/</id>
-        <link href="https://life.bangwhe.com/post/2021-05-25/">
+        <id>https://hbw-stack.github.io/post/2021-05-25/</id>
+        <link href="https://hbw-stack.github.io/post/2021-05-25/">
         </link>
         <updated>2021-05-25T15:54:16.000Z</updated>
         <summary type="html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/374164382">为官僚社会主义声辩</a></p>
@@ -131,8 +131,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2021-05-24]]></title>
-        <id>https://life.bangwhe.com/post/2021-05-24/</id>
-        <link href="https://life.bangwhe.com/post/2021-05-24/">
+        <id>https://hbw-stack.github.io/post/2021-05-24/</id>
+        <link href="https://hbw-stack.github.io/post/2021-05-24/">
         </link>
         <updated>2021-05-24T17:03:12.000Z</updated>
         <content type="html"><![CDATA[<p>编译了一个PyQt5，反正放到arm上就是很多要编译的。编译PyQt5的要求：qmake、sip，注意sip需要安装旧的4.19的，这样才有可执行的sip文件。主要参考：https://forums.developer.nvidia.com/t/how-to-install-pyqt5-in-jetson-xavier/79554。最后的bug是<code>QtWidgets.sip not found</code>，这是一个包没有，使用pip安装即可（<code>pip install PyQt5.sip</code>）。在编译的时候，我还学到了<code>make -j4</code>是使用四个线程同时编译的意思，由于这个jetson有8个核，所以最大可以设置到8，编译速度非常快。</p>
@@ -142,8 +142,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[PyQt5多线程]]></title>
-        <id>https://life.bangwhe.com/post/pyqt5-duo-xian-cheng/</id>
-        <link href="https://life.bangwhe.com/post/pyqt5-duo-xian-cheng/">
+        <id>https://hbw-stack.github.io/post/pyqt5-duo-xian-cheng/</id>
+        <link href="https://hbw-stack.github.io/post/pyqt5-duo-xian-cheng/">
         </link>
         <updated>2021-05-23T13:17:23.000Z</updated>
         <summary type="html"><![CDATA[<p>主要是毕设的代码里要用到多线程，本来是想直接在函数里写个函数，然后直接用python的多线程库跑的，但是看到Qt也有多线程库QThread，于是就决定用它了。</p>
@@ -165,8 +165,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2021-05-22]]></title>
-        <id>https://life.bangwhe.com/post/2021-05-22/</id>
-        <link href="https://life.bangwhe.com/post/2021-05-22/">
+        <id>https://hbw-stack.github.io/post/2021-05-22/</id>
+        <link href="https://hbw-stack.github.io/post/2021-05-22/">
         </link>
         <updated>2021-05-22T16:38:39.000Z</updated>
         <summary type="html"><![CDATA[<p>打游戏：鲁班大师+姜子牙打弹弓非常快乐，打不打得到主要靠鲁班大师的瞄准，三点一线，然后姜子牙飞过来就可以打到人。</p>
@@ -181,8 +181,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[git clone 提速]]></title>
-        <id>https://life.bangwhe.com/post/git-clone-ti-su/</id>
-        <link href="https://life.bangwhe.com/post/git-clone-ti-su/">
+        <id>https://hbw-stack.github.io/post/git-clone-ti-su/</id>
+        <link href="https://hbw-stack.github.io/post/git-clone-ti-su/">
         </link>
         <updated>2021-05-22T07:31:07.000Z</updated>
         <summary type="html"><![CDATA[<p>主要参考链接：</p>
@@ -274,8 +274,8 @@ if __name__ == '__main__':
     </entry>
     <entry>
         <title type="html"><![CDATA[Jetson环境安装]]></title>
-        <id>https://life.bangwhe.com/post/jetson-huan-jing-an-zhuang/</id>
-        <link href="https://life.bangwhe.com/post/jetson-huan-jing-an-zhuang/">
+        <id>https://hbw-stack.github.io/post/jetson-huan-jing-an-zhuang/</id>
+        <link href="https://hbw-stack.github.io/post/jetson-huan-jing-an-zhuang/">
         </link>
         <updated>2021-05-22T07:29:29.000Z</updated>
         <summary type="html"><![CDATA[<p>从开始安装到我安装完成（安装好了pytorch、torchvision等hrnet的要求库，并能正常运行），花费了有一天吧。下面我就从Jetson开始介绍并写一下自己环境安装过程中遇到的问题。</p>
@@ -310,7 +310,7 @@ if __name__ == '__main__':
 <li>nvidia开发者账号注册，这个太看网络情况了，建议开代理</li>
 <li>usb线的连接方式，正如第三个链接里所说的那样，<strong>USBC要接在电源键附近的接口</strong>，否则host不会将jetson识别为usb设备，而是一台可操作的机器</li>
 <li>网上有很多用旧的jetpack直接安装的方法，但是现在都是用sdk manager管理jetson上的sdk了，我个人在没有linux的情况下觉得不太好用。<br>
-<img src="https://life.bangwhe.com/post-images/1621701302346.png" alt="jetson download center里只能用sdk manager对xavier刷机" loading="lazy"></li>
+<img src="https://hbw-stack.github.io/post-images/1621701302346.png" alt="jetson download center里只能用sdk manager对xavier刷机" loading="lazy"></li>
 <li>sdk manager的登录，比较考验网络情况，最好开代理，否则要多试几次</li>
 <li>Jetson OS Image的下载，这个也比较看网络情况，可能有时候就是网络卡住了，导致下载卡住了，然后整个安装中止</li>
 <li>Jetson OS Image中的Drivers for Jetson部分出现的bug：<code>Could not get lock /var/lib/dpkg/lock-frontend</code>，这个是apt-get无法使用导致的，可以看<a href="https://zhuanlan.zhihu.com/p/126538251">这个</a>修复</li>
