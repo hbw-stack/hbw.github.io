@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://hbw-stack.github.io</id>
+    <id>https://www.bangwhe.com</id>
     <title>日常</title>
     <updated>2022-01-28T10:49:45.083Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://hbw-stack.github.io"/>
-    <link rel="self" href="https://hbw-stack.github.io/atom.xml"/>
+    <link rel="alternate" href="https://www.bangwhe.com"/>
+    <link rel="self" href="https://www.bangwhe.com/atom.xml"/>
     <subtitle>学习生活日常，分享幸福快乐</subtitle>
-    <logo>https://hbw-stack.github.io/images/avatar.png</logo>
-    <icon>https://hbw-stack.github.io/favicon.ico</icon>
+    <logo>https://www.bangwhe.com/images/avatar.png</logo>
+    <icon>https://www.bangwhe.com/favicon.ico</icon>
     <rights>All rights reserved 2022, 日常</rights>
     <entry>
         <title type="html"><![CDATA[PyQt5多线程]]></title>
-        <id>https://hbw-stack.github.io/post/pyqt5-duo-xian-cheng/</id>
-        <link href="https://hbw-stack.github.io/post/pyqt5-duo-xian-cheng/">
+        <id>https://www.bangwhe.com/post/pyqt5-duo-xian-cheng/</id>
+        <link href="https://www.bangwhe.com/post/pyqt5-duo-xian-cheng/">
         </link>
         <updated>2021-05-23T13:17:23.000Z</updated>
         <summary type="html"><![CDATA[<p>主要是毕设的代码里要用到多线程，本来是想直接在函数里写个函数，然后直接用python的多线程库跑的，但是看到Qt也有多线程库QThread，于是就决定用它了。</p>
@@ -35,8 +35,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Jetson环境安装]]></title>
-        <id>https://hbw-stack.github.io/post/jetson-huan-jing-an-zhuang/</id>
-        <link href="https://hbw-stack.github.io/post/jetson-huan-jing-an-zhuang/">
+        <id>https://www.bangwhe.com/post/jetson-huan-jing-an-zhuang/</id>
+        <link href="https://www.bangwhe.com/post/jetson-huan-jing-an-zhuang/">
         </link>
         <updated>2021-05-22T07:29:29.000Z</updated>
         <summary type="html"><![CDATA[<p>从开始安装到我安装完成（安装好了pytorch、torchvision等hrnet的要求库，并能正常运行），花费了有一天吧。下面我就从Jetson开始介绍并写一下自己环境安装过程中遇到的问题。</p>
@@ -71,7 +71,7 @@
 <li>nvidia开发者账号注册，这个太看网络情况了，建议开代理</li>
 <li>usb线的连接方式，正如第三个链接里所说的那样，<strong>USBC要接在电源键附近的接口</strong>，否则host不会将jetson识别为usb设备，而是一台可操作的机器</li>
 <li>网上有很多用旧的jetpack直接安装的方法，但是现在都是用sdk manager管理jetson上的sdk了，我个人在没有linux的情况下觉得不太好用。<br>
-<img src="https://hbw-stack.github.io/post-images/1621701302346.png" alt="jetson download center里只能用sdk manager对xavier刷机" loading="lazy"></li>
+<img src="https://www.bangwhe.com/post-images/1621701302346.png" alt="jetson download center里只能用sdk manager对xavier刷机" loading="lazy"></li>
 <li>sdk manager的登录，比较考验网络情况，最好开代理，否则要多试几次</li>
 <li>Jetson OS Image的下载，这个也比较看网络情况，可能有时候就是网络卡住了，导致下载卡住了，然后整个安装中止</li>
 <li>Jetson OS Image中的Drivers for Jetson部分出现的bug：<code>Could not get lock /var/lib/dpkg/lock-frontend</code>，这个是apt-get无法使用导致的，可以看<a href="https://zhuanlan.zhihu.com/p/126538251">这个</a>修复</li>
